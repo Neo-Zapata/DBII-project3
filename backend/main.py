@@ -13,7 +13,9 @@ class some_class():
     block_dictionary = {}
     indexed_dictionary = {}
 
-    def __init__(self):
+    def __init__(self, limit, flag):
+        if flag:
+            self.PROCESS_IMAGES(limit)
         self.PROCESS_RTREE()
         # self.LOAD_RTREE()
 
@@ -55,9 +57,9 @@ class some_class():
         p.idx_extension = 'index'
         return p
 
-    def PROCESS_IMAGES(self):
+    def PROCESS_IMAGES(self, limit):
         clear_processed_processes_directory()
-        self.total, self.block_dictionary = process_dataset()
+        self.total, self.block_dictionary = process_dataset(limit)
         
     def RANGE_SEARCH_RTREE(self, file_name, radius):
         if hasattr(self, 'idx128d'):

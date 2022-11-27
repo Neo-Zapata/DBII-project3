@@ -68,17 +68,10 @@ def knn_search(file_name, k, cwd, block_dictionary):
             info = []
             print("searching...")
             time1 = time.time()
-            # for i in range(total):
             for path in block_dictionary:
-                # print(block_dictionary[path])
-                # print(type(block_dictionary[path]))
-                # print(new_face_encoding[0])
-                # print(type(new_face_encoding[0]))
                 first = numpy.array(list(map(float, block_dictionary[path].strip("()").split(', '))))
                 second = numpy.array(list(map(float, new_face_encoding[0])))
                 distance = numpy.linalg.norm(first - second)
-                # if distance < radius:
-                # result.append((path, distance))
                 person = path
                 pq.put((round(distance,3), person))
                 info.append((person, round(distance,3)))

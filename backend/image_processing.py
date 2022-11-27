@@ -18,7 +18,7 @@ filename = "processed_images.json"
 path_to_clean_1 = processed_images_path
 
 
-def process_dataset():
+def process_dataset(limit):
 
     total = 0 # this is the total number of processed images
 
@@ -38,8 +38,16 @@ def process_dataset():
 
     for subdirectory in dataset_subdirectories_list: # list of all subdirectories names
         # print(subdirectory) # name of the las sub subdirectories
+        if(total >= limit):
+            load_to_memory(block_dictionary)
+            return total, encodings
+
         subdirectory_path = dataset_directory_path + "/" + subdirectory
         for image in os.listdir(subdirectory_path): # search in all subdirectories # in most of them there are only 1
+            if(total >= limit):
+                load_to_memory(block_dictionary)
+                return total, encodings
+
             image_path = subdirectory_path + "/" + image
             key = subdirectory + '/' + image
             face = face_recognition.load_image_file(image_path)
