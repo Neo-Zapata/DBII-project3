@@ -59,7 +59,7 @@ def knn_search(file_name, k, cwd, block_dictionary):
         face = face_recognition.load_image_file(image_path)
         face_encoding = face_recognition.face_encodings(face) # calculating the image encoding
         if len(face_encoding) == 0:
-            print("no face founnd")
+            print("no face found")
             return 0
         else:
             new_face_encoding = tuple(face_encoding)
@@ -85,7 +85,7 @@ def knn_search(file_name, k, cwd, block_dictionary):
             for i in range(k):
                 result.append(pq.get())
             time2 = time.time()
-            print("reange_search took " + str(round((time2 - time1) * 1000)) + " ms.")
+            print("knn_search took " + str(round((time2 - time1) * 1000)) + " ms.")
             print("displaying results:")
             return result
 
@@ -108,28 +108,3 @@ def knn_search(file_name, k, cwd, block_dictionary):
 # append to result
 # return
 
-
-
-
-#  start = timer()
-#         partialResult = []
-#         for i in range(self.n):
-#             first = numpy.asarray(self.vectors[i])
-#             second = numpy.asarray(vector0) 
-#             dist = numpy.linalg.norm(first-second)
-#             if dist < r:
-#                 partialResult.append((i, dist))
-#         partialResult = sorted(partialResult, key=lambda item: item[1])
-#         end = timer()
-
-#         result = []
-
-#         for rangeValue in partialResult:
-#             if numpy.linalg.norm(vector0-self.vectors[rangeValue[0]]) < r:
-#                 route = self.dict128VectorPhotos[str(tuple(self.vectors[rangeValue[0]]))]
-#                 name = route.split('/')[1]
-#                 dist = rangeValue[1]
-#                 print(route, "\tname:", name, "\tdist:", dist)
-#                 result.append((route, name, dist))
-#         print("Time in ms:", (end-start)*1000)
-#         return result
