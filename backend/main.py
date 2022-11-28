@@ -1,6 +1,7 @@
 from sequential_search import *
 from image_processing import *
 from rtree_search import *
+from kdtree import *
 from rtree import index
 import os
 
@@ -98,6 +99,15 @@ class some_class():
                 return 0
         info = knn_search(file_name, k, cwd, self.block_dictionary)
         self.printing(info)
+
+    def KDTREE(self, file_name, k):
+        if(len(self.block_dictionary) == 0):
+            self.block_dictionary = load_block_dictionary(self.block_dictionary, self.total)
+            if(len(self.block_dictionary) == 0):
+                print("data has not been processed..")
+                return 0
+        info = kdtree(file_name, k, cwd, self.block_dictionary)
+        self.printing(info)  
 
     def printing(self, info):
         counter = 0
