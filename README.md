@@ -45,6 +45,33 @@ Procedimiento general:
   </tbody>
 </table>
 
+# Cuadro de Participación:
+
+<table>
+  <tbody>
+    <tr>
+      <th>Integrantes</th>
+      <th align="center">Participación</th>
+    </tr>
+    <tr>
+      <td>Neo Marcelo Zapata Gallegos</td>
+      <td align="center">100%</td>
+    </tr>
+    <tr>
+      <td>Harold Canto Vidal</td>
+      <td align="center">100%</td>
+    </tr>
+    <tr>
+      <td>Christian Rojas Rojas</td>
+      <td align="center">100%</td>
+    </tr>
+    <tr>
+      <td>Eros Carhuancho Espejo</td>
+      <td align="center">100%</td>
+    </tr>
+  </tbody>
+</table>
+
 ANOTACIONES:
     ES NECESARIO CARGAR EL DIRECTORIO DE IMAGENES CON EL NOMBRE "dataset" DENTRO DE LA CARPETA "/backend".
     backend -
