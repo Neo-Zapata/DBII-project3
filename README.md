@@ -42,6 +42,10 @@ Procedimiento general:
       <td>Escritura del informe</td>
       <td align="center">Eros Carhuancho y Harold Canto</td>
     </tr>
+    <tr>
+      <td>Implementación de la función knn para el KDtree </td>
+      <td align="center">Eros Carhuancho y Harold Canto</td>
+    </tr>
   </tbody>
 </table>
 
