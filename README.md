@@ -5,10 +5,17 @@
 * Christian Rojas Rojas
 * Eros Carhuancho Espejo
 
+# Tabla de contenido
+- [Cuadro de Actividades](#Cuadro-de-Actividades)
+- [Cuadro de Participación](#Cuadro-de-Participación)
+
+
+
 Procedimiento general:
     - Extracción de caracteristicas
     - Indexacion de vectores caracteristicos para busquedas eficientes
     - Algoritmo de búsqueda KNN
+    
     
 # Cuadro de Actividades:
 
@@ -75,6 +82,8 @@ Procedimiento general:
     </tr>
   </tbody>
 </table>
+
+
 
 ANOTACIONES:
     ES NECESARIO CARGAR EL DIRECTORIO DE IMAGENES CON EL NOMBRE "dataset" DENTRO DE LA CARPETA "/backend".
