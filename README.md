@@ -1,4 +1,9 @@
 # DBII-project3
+# **Integrantes**
+* Neo Marcelo Zapata Gallegos
+* Harold Canto Vidal
+* Christian Rojas Rojas
+* Eros Carhuancho Espejo
 
 Procedimiento general:
     - Extracción de caracteristicas
