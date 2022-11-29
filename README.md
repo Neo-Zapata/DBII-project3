@@ -19,6 +19,7 @@
 - [Maldición de la dimensionalidad](#Maldición-de-la-dimensionalidad)
 
 - [Experimentación](#Experimentación)
+   * [Análisis y discusión](#Análisis-y-discusión)
 
 Procedimiento general:
     - Extracción de caracteristicas
@@ -110,7 +111,11 @@ El KD-Tree es una estructura de datos de partición espacial para poder organiza
 # Maldición de la dimensionalidad
 
 # Experimentación
+Para testear las implementaciones, se usa una imagen de Salma_Hayeks como query. Mostraremos el tiempo que demora para 100,200,400,800,1600,3200,6400,12800 datos.
 
+![Image text](https://github.com/Neo-Zapata/DBII-project3/blob/main/Grafico.png)
+
+## Análisis y discusión
 
 ANOTACIONES:
     ES NECESARIO CARGAR EL DIRECTORIO DE IMAGENES CON EL NOMBRE "dataset" DENTRO DE LA CARPETA "/backend".
