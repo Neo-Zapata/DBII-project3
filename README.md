@@ -16,7 +16,9 @@
 - [Implementación](#Implementación)
     * [Backend](#Backend)
     * [Frontend](#Frontend)
-    * [Experimentación](#Experimentación)
+- [Maldición de la dimensionalidad](#Maldición-de-la-dimensionalidad)
+
+- [Experimentación](#Experimentación)
 
 Procedimiento general:
     - Extracción de caracteristicas
@@ -108,7 +110,10 @@ El KD-Tree es una estructura de datos de partición espacial para poder organiza
 # Implementación
 ## Backend
 ## Frontend
-## Experimentación
+
+# Maldicion de la dimensionalidad
+
+# Experimentación
 
 
 ANOTACIONES:
