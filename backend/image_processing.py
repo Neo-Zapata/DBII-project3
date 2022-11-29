@@ -126,6 +126,7 @@ def clear_processed_processes_directory():
 def load_block_dictionary(block_dictionary, total):
     for i in range(1, total):
         PATH = cwd + "/backend/processed_dataset/processed_images.json"
+        print(PATH)
         try:
             aux = lc.getline(PATH, i).rstrip()
             if aux != "":

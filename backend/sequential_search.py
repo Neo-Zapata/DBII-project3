@@ -19,13 +19,13 @@ def range_search(file_name, radius, cwd, block_dictionary):
     radius = 0.5
     if not os.path.exists(image_path):
         print("No path")
-        return 0
+        return []
     else:
         face = face_recognition.load_image_file(image_path)
         face_encoding = face_recognition.face_encodings(face) # calculating the image encoding
         if len(face_encoding) == 0:
             print("no face founnd")
-            return 0
+            return []
         else:
             new_face_encoding = tuple(face_encoding)
             result = []
@@ -57,13 +57,13 @@ def knn_search(file_name, k, cwd, block_dictionary):
     image_path = cwd + '/instance/uploads/' + file_name
     if not os.path.exists(image_path):
         print("No path")
-        return 0
+        return []
     else:
         face = face_recognition.load_image_file(image_path)
         face_encoding = face_recognition.face_encodings(face) # calculating the image encoding
         if len(face_encoding) == 0:
             print("no face found")
-            return 0
+            return []
         else:
             new_face_encoding = tuple(face_encoding)
             result = []

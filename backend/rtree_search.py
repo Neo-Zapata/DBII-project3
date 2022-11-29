@@ -10,13 +10,13 @@ def knn_search_rtree(file_name, K, cwd, indexed_dictionary,idx):
       image_path = cwd + '/backend/test_images/' + file_name
       if not os.path.exists(image_path):
             print("No path")
-            return 0
+            return []
       else:
         face = face_recognition.load_image_file(image_path)
         face_encoding = face_recognition.face_encodings(face) # calculating the image encoding
         if len(face_encoding) == 0:
             print("no face found")
-            return 0
+            return []
         else:
           new_face_encoding = tuple(face_encoding[0])
           result=[]
@@ -46,13 +46,13 @@ def range_search_rtree(file_name, radius, cwd, idx, indexed_dictionary):
       image_path = cwd + '/backend/test_images/' + file_name
       if not os.path.exists(image_path):
             print("No path")
-            return 0
+            return []
       else:
             face = face_recognition.load_image_file(image_path)
             face_encoding = face_recognition.face_encodings(face) # calculating the image encoding
             if len(face_encoding) == 0:
                   print("no face found")
-                  return 0
+                  return []
             else:
                   new_face_encoding = tuple(face_encoding[0])
                   limite_inferior = []

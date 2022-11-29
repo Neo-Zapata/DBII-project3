@@ -14,14 +14,14 @@ def kdtree(file_name, k, cwd, block_dictionary):
     image_path = cwd + '/backend/test_images/' + file_name
     if not os.path.exists(image_path):
         print("No path")
-        return 0
+        return []
     else:
         face = face_recognition.load_image_file(image_path)
         face_encoding = face_recognition.face_encodings(face)
         face_encoding = numpy.array(face_encoding)
         if len(face_encoding) == 0:
             print("no face founnd")
-            return 0
+            return []
         else:
 
             isFile = os.path.isfile(cwd+'/backend/KD-TREE.csv')

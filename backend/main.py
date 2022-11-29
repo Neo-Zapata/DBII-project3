@@ -86,7 +86,7 @@ class some_class():
             self.block_dictionary = load_block_dictionary(self.block_dictionary, self.total)
             if(len(self.block_dictionary) == 0):
                 print("data has not been processed..")
-                return 0
+                return []
         info = range_search(file_name, radius, cwd, self.block_dictionary)
         self.printing(info)
         return info
@@ -97,7 +97,7 @@ class some_class():
             self.block_dictionary = load_block_dictionary(self.block_dictionary, self.total)
             if(len(self.block_dictionary) == 0):
                 print("data has not been processed..")
-                return 0
+                return []
         info = knn_search(file_name, k, cwd, self.block_dictionary)
         self.printing(info)
         return info
@@ -107,7 +107,7 @@ class some_class():
             self.block_dictionary = load_block_dictionary(self.block_dictionary, self.total)
             if(len(self.block_dictionary) == 0):
                 print("data has not been processed..")
-                return 0
+                return []
         info = kdtree(file_name, k, cwd, self.block_dictionary)
         self.printing(info)  
 
