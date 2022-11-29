@@ -13,6 +13,10 @@
     * [Face Recognition](#Face-Recognition)
     * [Rtree](#Rtree)
     * [KD-Tree](#KD-Tree)
+- [Implementación](#Implementación)
+    * [Backend](#Backend)
+    * [Frontend](#Frontend)
+    * [Experimentación](#Experimentación)
 
 Procedimiento general:
     - Extracción de caracteristicas
@@ -101,7 +105,10 @@ Esta librería implementa un RTree el cual indexa los vectores característicos 
 ## KD-Tree
 El KD-Tree es una estructura de datos de partición espacial para poder organizar puntos en un espacio k-dimensional. Este árbol es útil para aplicaciones como búsqueda por rango y la búsqueda del vecino más cercano, el cual es parte del objetivo de nuestro proyecto. Con ayuda de la librería sklearn podremos llamar a nuestra estructura de datos KDTree. Con la función query(imagen,k) podremos saber los k vecinos más cercanos a la imagen dada. Todo esto comparando las 128 dimensiones antes representadas con la librería face_recognition. 
 
-
+# Implementación
+## Backend
+## Frontend
+## Experimentación
 
 
 ANOTACIONES:
