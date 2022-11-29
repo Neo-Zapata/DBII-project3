@@ -107,6 +107,8 @@ El KD-Tree es una estructura de datos de partición espacial para poder organiza
 
 # Implementación
 ## Backend
+
+## R-tree
  Para el optimo uso del R-tree de  python se usan  **`idx.intersect`** y   **`idx.nearest`** para la busqueda por rango y el knn respectivamente idx es el indice que se maneja para su correcto uso.
  Para los vecinos más cercanos retornamos el path de la imagen y un dist que representa el vector caracteristico de la imagen.
  Para el caso de la busqeuda por rango con el Rtree su implementacion no es directa , ya que se tiene que crear un MBR para restar y sumar las 128 dimensiones 
