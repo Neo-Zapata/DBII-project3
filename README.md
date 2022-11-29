@@ -110,6 +110,8 @@ El KD-Tree es una estructura de datos de partición espacial para poder organiza
 ## Frontend
 
 # Maldición de la dimensionalidad
+Al aumentar el número de dimensiones se pueden agravar notablemente muchos de los problemas que ya pueden aparecer en dimensiones menores, esto es lo que se conoce como la maldición de la dimensionalidad sobre todo ocurre en casos cuando evaluamos los KNN vecinos más cercanos, ya que los valores se pueden parecer por las distancias que se genera. 
+Una de las maneras de erradicarla es teniendo mayor cantidad de datos y quitando dimensiones.
 
 # Experimentación
 Para testear las implementaciones, se usa una imagen de Salma_Hayeks como query. Mostraremos el tiempo que demora para 100,200,400,800,1600,3200,6400,12800 datos.
