@@ -111,7 +111,7 @@ El KD-Tree es una estructura de datos de partición espacial para poder organiza
 ## Backend
 ## Frontend
 
-# Maldicion de la dimensionalidad
+# Maldición de la dimensionalidad
 
 # Experimentación
 
