@@ -41,7 +41,7 @@ Procedimiento general:
     </tr>
     <tr>
       <td>Implementación de la función range_search y knn para el Rtree </td>
-      <td align="center">Harold Canto Vidal</td>
+      <td align="center">Harold Canto Vidal y Neo Marcelo Zapata Gallegos</td>
     </tr>
     <tr>
       <td>Implementación de la función preprocesamiento</td>
@@ -53,7 +53,7 @@ Procedimiento general:
     </tr>
     <tr>
       <td>Implementación del Frontend</td>
-      <td align="center">Christian Rojas Rojas</td>
+      <td align="center">Christian Rojas Rojas y Eros Carhuancho</td>
     </tr>
     <tr>
       <td>Escritura del informe</td>
