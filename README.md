@@ -100,13 +100,17 @@ Esta librería nos podrá dar las herramientas de representación para los rostr
 
 
 ## Rtree
-Esta librería implementa un RTree el cual indexa los vectores característicos de las imágenes. La estructura implementada en esta librería está optimizada para poder resolver el problema de encontrar los vecinos más cercanos y además nos permite obtener resultados en un rango de consulta. Para el optimo uso del R-tree python se usan  **`idx.intersect`** y   **`idx.nearest`** para la busqueda por rango y el knn respectivamente 
+Esta librería implementa un RTree el cual indexa los vectores característicos de las imágenes. La estructura implementada en esta librería está optimizada para poder resolver el problema de encontrar los vecinos más cercanos.
 
 ## KD-Tree
 El KD-Tree es una estructura de datos de partición espacial para poder organizar puntos en un espacio k-dimensional. Este árbol es útil para aplicaciones como búsqueda por rango y la búsqueda del vecino más cercano, el cual es parte del objetivo de nuestro proyecto. Con ayuda de la librería sklearn podremos llamar a nuestra estructura de datos KDTree. Con la función query(imagen,k) podremos saber los k vecinos más cercanos a la imagen dada. Todo esto comparando las 128 dimensiones antes representadas con la librería face_recognition. 
 
 # Implementación
 ## Backend
+ Para el optimo uso del R-tree de  python se usan  **`idx.intersect`** y   **`idx.nearest`** para la busqueda por rango y el knn respectivamente idx es el indice que se maneja para su correcto uso.
+ Para los vecinos más cercanos retornamos el path de la imagen y un dist que representa el vector caracteristico de la imagen.
+ Para el caso de la busqeuda por rango con el Rtree su implementacion no es directa , ya que se tiene que crear un MBR para restar y sumar las 128 dimensiones 
+
 ## Frontend
 
 # Maldición de la dimensionalidad
