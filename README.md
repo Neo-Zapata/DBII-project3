@@ -139,5 +139,16 @@ Las pruebas muestran que las consultas indexadas en Rtree y KDTree son mucho má
     backend -
              |_ dataset
              |_ processed_data (automatically created)
+             |_ instance
+             |_ KD_TREE.csv (automatically created for KDTree)
              |_ main.py
-             |_ README.md
+             |_ rest.py ...
+             |_ test_images
+    frontend-
+             |_ static
+             |_ templates
+    instance-
+             |_ uploads
+    grafico
+    README.md
+    
