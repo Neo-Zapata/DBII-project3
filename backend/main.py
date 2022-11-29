@@ -17,7 +17,7 @@ class some_class():
     def __init__(self, limit, flag):
         if flag:
             self.PROCESS_IMAGES(limit)
-        self.PROCESS_RTREE()
+        #self.PROCESS_RTREE()
         # self.LOAD_RTREE()
 
     # def LOAD_RTREE(self):
@@ -86,9 +86,10 @@ class some_class():
             self.block_dictionary = load_block_dictionary(self.block_dictionary, self.total)
             if(len(self.block_dictionary) == 0):
                 print("data has not been processed..")
-                return 0
+                return []
         info = range_search(file_name, radius, cwd, self.block_dictionary)
         self.printing(info)
+        return info
     
     def KNN_SEARCH(self, file_name, k):
         if(len(self.block_dictionary) == 0):
@@ -96,16 +97,17 @@ class some_class():
             self.block_dictionary = load_block_dictionary(self.block_dictionary, self.total)
             if(len(self.block_dictionary) == 0):
                 print("data has not been processed..")
-                return 0
+                return []
         info = knn_search(file_name, k, cwd, self.block_dictionary)
         self.printing(info)
+        return info
 
     def KDTREE(self, file_name, k):
         if(len(self.block_dictionary) == 0):
             self.block_dictionary = load_block_dictionary(self.block_dictionary, self.total)
             if(len(self.block_dictionary) == 0):
                 print("data has not been processed..")
-                return 0
+                return []
         info = kdtree(file_name, k, cwd, self.block_dictionary)
         self.printing(info)  
 

@@ -14,16 +14,18 @@ import face_recognition
 from queue import PriorityQueue 
 
 def range_search(file_name, radius, cwd, block_dictionary):
-    image_path = cwd + '/backend/test_images/' + file_name
+    #image_path = cwd + '/test_images/' + file_name
+    image_path = cwd + '/instance/uploads/' + file_name
+    radius = 0.5
     if not os.path.exists(image_path):
         print("No path")
-        return 0
+        return []
     else:
         face = face_recognition.load_image_file(image_path)
         face_encoding = face_recognition.face_encodings(face) # calculating the image encoding
         if len(face_encoding) == 0:
             print("no face founnd")
-            return 0
+            return []
         else:
             new_face_encoding = tuple(face_encoding)
             result = []
@@ -51,16 +53,17 @@ def range_search(file_name, radius, cwd, block_dictionary):
 
 def knn_search(file_name, k, cwd, block_dictionary):
     pq = PriorityQueue(False)
-    image_path = cwd + '/backend/test_images/' + file_name
+    #image_path = cwd + '/test_images/' + file_name
+    image_path = cwd + '/instance/uploads/' + file_name
     if not os.path.exists(image_path):
         print("No path")
-        return 0
+        return []
     else:
         face = face_recognition.load_image_file(image_path)
         face_encoding = face_recognition.face_encodings(face) # calculating the image encoding
         if len(face_encoding) == 0:
             print("no face found")
-            return 0
+            return []
         else:
             new_face_encoding = tuple(face_encoding)
             result = []
@@ -74,7 +77,7 @@ def knn_search(file_name, k, cwd, block_dictionary):
                 distance = numpy.linalg.norm(first - second)
                 person = path
                 pq.put((round(distance,3), person))
-                info.append((person, round(distance,3)))
+                info.append((round(distance,3),person))
             for i in range(k):
                 result.append(pq.get())
             time2 = time.time()

@@ -16,4 +16,4 @@ def test():
     print()
     smt.KDTREE("Salma_Hayek.jpeg", 8)
 
-test()
+# test()
