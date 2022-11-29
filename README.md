@@ -8,7 +8,7 @@
 # Tabla de contenido
 - [Cuadro de Actividades](#Cuadro-de-Actividades)
 - [Cuadro de Participación](#Cuadro-de-Participación)
-
+- [Objetivo](#Objetivo)
 
 
 Procedimiento general:
@@ -82,6 +82,9 @@ Procedimiento general:
     </tr>
   </tbody>
 </table>
+
+
+# Objetivo:
 
 
 
