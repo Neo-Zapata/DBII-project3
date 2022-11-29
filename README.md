@@ -5,6 +5,9 @@
 * Christian Rojas Rojas
 * Eros Carhuancho Espejo
 
+# **PPT**
+link: https://docs.google.com/presentation/d/1w-3S1GJHLz2q4wfe4VzviZXjz44bbU1Uav4WZj3aVOI/edit?usp=sharing
+
 # Tabla de contenido
 - [Cuadro de Actividades](#Cuadro-de-Actividades)
 - [Cuadro de Participación](#Cuadro-de-Participación)
