@@ -43,10 +43,6 @@ Procedimiento general:
       <td align="center">Neo Marcelo Zapata Gallegos</td>
     </tr>
     <tr>
-      <td>Implementación de la función score</td>
-      <td align="center">Christian Rojas Rojas y Neo Marcelo Zapata Gallegos</td>
-    </tr>
-    <tr>
       <td>Implementación de la función range_search y knn secuencial</td>
       <td align="center">Neo Marcelo Zapata Gallegos</td>
     </tr>
