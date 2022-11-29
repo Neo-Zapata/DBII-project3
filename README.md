@@ -9,7 +9,10 @@
 - [Cuadro de Actividades](#Cuadro-de-Actividades)
 - [Cuadro de Participación](#Cuadro-de-Participación)
 - [Introducción](#Introducción)
-
+- [Librerías](#Librerías)
+    * [Face Recognition](#Face-Recognition)
+    * [Rtree](#Rtree)
+    * [KD-Tree](#KD-Tree)
 
 Procedimiento general:
     - Extracción de caracteristicas
@@ -87,6 +90,10 @@ Procedimiento general:
 # Introducción:
 El reconocimiento facial es una forma de identificar o confirmar la identidad de una persona en función de su rostro. Los sistemas de reconocimiento facial se pueden utilizar para identificar personas en fotos, videos o en tiempo real. En este proyecto con ayuda de librerías especializadas en el procesamiento de imágenes crearemos un programa que reconozca el rostro de una imagen y devuelva los rostros más parecidos a partir de una base de datos.
 
+# Librerías:
+## Face Recognition
+## Rtree
+## KD-Tree
 
 ANOTACIONES:
     ES NECESARIO CARGAR EL DIRECTORIO DE IMAGENES CON EL NOMBRE "dataset" DENTRO DE LA CARPETA "/backend".
