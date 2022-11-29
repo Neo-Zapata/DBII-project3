@@ -8,7 +8,7 @@
 # Tabla de contenido
 - [Cuadro de Actividades](#Cuadro-de-Actividades)
 - [Cuadro de Participación](#Cuadro-de-Participación)
-- [Objetivo](#Objetivo)
+- [Introducción](#Introducción)
 
 
 Procedimiento general:
@@ -84,8 +84,8 @@ Procedimiento general:
 </table>
 
 
-# Objetivo:
-
+# Introducción:
+El reconocimiento facial es una forma de identificar o confirmar la identidad de una persona en función de su rostro. Los sistemas de reconocimiento facial se pueden utilizar para identificar personas en fotos, videos o en tiempo real. En este proyecto con ayuda de librerías especializadas en el procesamiento de imágenes crearemos un programa que reconozca el rostro de una imagen y devuelva los rostros más parecidos a partir de una base de datos.
 
 
 ANOTACIONES:
