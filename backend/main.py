@@ -17,7 +17,7 @@ class some_class():
     def __init__(self, limit, flag):
         if flag:
             self.PROCESS_IMAGES(limit)
-        self.PROCESS_RTREE()
+        #self.PROCESS_RTREE()
         # self.LOAD_RTREE()
 
     # def LOAD_RTREE(self):
@@ -89,6 +89,7 @@ class some_class():
                 return 0
         info = range_search(file_name, radius, cwd, self.block_dictionary)
         self.printing(info)
+        return info
     
     def KNN_SEARCH(self, file_name, k):
         if(len(self.block_dictionary) == 0):
@@ -99,6 +100,7 @@ class some_class():
                 return 0
         info = knn_search(file_name, k, cwd, self.block_dictionary)
         self.printing(info)
+        return info
 
     def KDTREE(self, file_name, k):
         if(len(self.block_dictionary) == 0):
