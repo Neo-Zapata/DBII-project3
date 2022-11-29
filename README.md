@@ -20,6 +20,7 @@
 
 - [Experimentación](#Experimentación)
    * [Análisis y discusión](#Análisis-y-discusión)
+   * [ANOTACIONES](#ANOTACIONES)
 
 Procedimiento general:
     - Extracción de caracteristicas
@@ -116,8 +117,9 @@ Para testear las implementaciones, se usa una imagen de Salma_Hayeks como query.
 ![Image text](https://github.com/Neo-Zapata/DBII-project3/blob/main/Grafico.png)
 
 ## Análisis y discusión
+Las pruebas muestran que las consultas indexadas en Rtree y KDTree son mucho más eficientes que las consultas secuenciales, es decir, no nos afecta la maldición del dimensionalidad en comparación con las implementaciones secuenciales. Finalmente, pudimos implementar el proyecto que devuelve las personas más similares en nuestra base de datos para cualquier consulta dada.
 
-ANOTACIONES:
+## ANOTACIONES
     ES NECESARIO CARGAR EL DIRECTORIO DE IMAGENES CON EL NOMBRE "dataset" DENTRO DE LA CARPETA "/backend".
     backend -
              |_ dataset
