@@ -99,6 +99,10 @@ Esta librería nos podrá dar las herramientas de representación para los rostr
 Esta librería implementa un RTree el cual indexa los vectores característicos de las imágenes. La estructura implementada en esta librería está optimizada para poder resolver el problema de encontrar los vecinos más cercanos.
 
 ## KD-Tree
+El KD-Tree es una estructura de datos de partición espacial para poder organizar puntos en un espacio k-dimensional. Este árbol es útil para aplicaciones como búsqueda por rango y la búsqueda del vecino más cercano, el cual es parte del objetivo de nuestro proyecto. Con ayuda de la librería sklearn podremos llamar a nuestra estructura de datos KDTree. Con la función query(imagen,k) podremos saber los k vecinos más cercanos a la imagen dada. Todo esto comparando las 128 dimensiones antes representadas con la librería face_recognition. 
+
+
+
 
 ANOTACIONES:
     ES NECESARIO CARGAR EL DIRECTORIO DE IMAGENES CON EL NOMBRE "dataset" DENTRO DE LA CARPETA "/backend".
