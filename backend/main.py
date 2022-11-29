@@ -98,9 +98,9 @@ class some_class():
             if(len(self.block_dictionary) == 0):
                 print("data has not been processed..")
                 return []
-        info = knn_search(file_name, k, cwd, self.block_dictionary)
+        info, tiempo = knn_search(file_name, k, cwd, self.block_dictionary)
         self.printing(info)
-        return info
+        return info, tiempo
 
     def KDTREE(self, file_name, k):
         if(len(self.block_dictionary) == 0):
@@ -108,8 +108,9 @@ class some_class():
             if(len(self.block_dictionary) == 0):
                 print("data has not been processed..")
                 return []
-        info = kdtree(file_name, k, cwd, self.block_dictionary)
+        info, tiempo = kdtree(file_name, k, cwd, self.block_dictionary)
         self.printing(info)  
+        return info, tiempo
 
     def printing(self, info):
         counter = 0

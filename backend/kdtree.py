@@ -59,6 +59,7 @@ def kdtree(file_name, k, cwd, block_dictionary):
                 for i in range(len(dist[0])):
                     result.append((round(dist[0][i],3),temp1.iloc[ind[0][i]].values.tolist()[-1]))
                 time2 = time.time()
-                print("reange_search took " + str(round((time2 - time1) * 1000)) + " ms.")
+                tiempo = str(round((time2 - time1) * 1000))
+                print("reange_search took " + tiempo + " ms.")
                 print("displaying results:")
-                return result
+                return result, tiempo

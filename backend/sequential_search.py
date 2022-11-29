@@ -81,9 +81,10 @@ def knn_search(file_name, k, cwd, block_dictionary):
             for i in range(k):
                 result.append(pq.get())
             time2 = time.time()
-            print("knn_search took " + str(round((time2 - time1) * 1000)) + " ms.")
+            tiempo = str(round((time2 - time1) * 1000))
+            print("knn_search took " + tiempo + " ms.")
             print("displaying results:")
-            return result
+            return result, tiempo
 
 # we pass a file, a photo or image we have to compare to the ones we processed
 

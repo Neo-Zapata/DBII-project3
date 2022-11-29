@@ -21,12 +21,21 @@ def rangeSearch(file, radius):
     return res
 
 # AQUI ESTAMOS TRABAJANDO
+# @app.route("/KNNSearch/<file>/<k>", methods=['GET'])
+# def KNNSearch(file, k):
+#     k = int(k)
+#     res, tiempo = smt.KNN_SEARCH(file, k)
+#     print(res)
+#     print(tiempo)
+#     return render_template('result.html', data = res, tiempo = tiempo)
+
 @app.route("/KNNSearch/<file>/<k>", methods=['GET'])
 def KNNSearch(file, k):
     k = int(k)
-    res = smt.KNN_SEARCH(file, k)
+    res, tiempo = smt.KDTREE(file, k)
     print(res)
-    return render_template('result.html', data = res)
+    print(tiempo)
+    return render_template('result.html', data = res, tiempo = tiempo, original = file)
 
 
 @app.route("/ind/<file>/<radius>", methods=['GET'])
