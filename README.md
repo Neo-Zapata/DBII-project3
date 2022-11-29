@@ -88,11 +88,16 @@ Procedimiento general:
 
 
 # Introducción:
-El reconocimiento facial es una forma de identificar o confirmar la identidad de una persona en función de su rostro. Los sistemas de reconocimiento facial se pueden utilizar para identificar personas en fotos, videos o en tiempo real. En este proyecto con ayuda de librerías especializadas en el procesamiento de imágenes crearemos un programa que reconozca el rostro de una imagen y devuelva los rostros más parecidos a partir de una base de datos.
+El reconocimiento facial es una forma de identificar o confirmar la identidad de una persona en función de su rostro. Los sistemas de reconocimiento facial se pueden utilizar para identificar personas en fotos, videos o en tiempo real. En este proyecto con ayuda de librerías especializadas en el procesamiento de imágenes crearemos un programa que reconozca el rostro de una imagen y devuelva los rostros más parecidos a partir de una base de datos. 
 
 # Librerías:
 ## Face Recognition
+Esta librería nos podrá dar las herramientas de representación para los rostros de una imagen. Con la ayuda de la función load_image_file podremos representar toda la imagen en un vector de números. Posteriormente con la ayuda de la función face_encodings podremos reconocer un rostro de la imagen anteriormente procesada y generar un vector característico de 128 dimensiones, el cual es la representación matemática de un rostro. En el proyecto usaremos este vector característico para poder comparar con otros vectores de otras imágenes y así reconocer la similitud de rostros
+
+
 ## Rtree
+Esta librería implementa un RTree el cual indexa los vectores característicos de las imágenes. La estructura implementada en esta librería está optimizada para poder resolver el problema de encontrar los vecinos más cercanos.
+
 ## KD-Tree
 
 ANOTACIONES:
