@@ -111,6 +111,9 @@ El KD-Tree es una estructura de datos de partición espacial para poder organiza
 # Implementación
 ## Backend
 
+## Procesamiento
+  Se utiliza bloques para procesar las imagenes. Cada 1000 imagenes procesadas se sube al archivo en memoria secundaria y se limpia el diccionaria para mejorar el rendimiento y la velocidad de procesamiento. Aproximadamente toma 10 a 15 min.
+
 ## Sequential
    Para el **`range_search()`**, se utilizó comparaciones con las distancias euclidianas obtenidas por **`numpy.linalg.norm()`**, con una busqueda secquencial en todas las imagenes procesadas de la colección.
    Para el **`knn_search()`**, se utilizó una cola de prioridad. En la que insertamos todos los elementos de la colección (ordenandolos por su distancia) y seleccionamos los K elementos con las distancias más pequeñas a la imagen de entrada. (query)
