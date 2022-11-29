@@ -108,10 +108,17 @@ El KD-Tree es una estructura de datos de partición espacial para poder organiza
 # Implementación
 ## Backend
 
+## Sequential
+   Para el **`range_search()`**, se utilizó comparaciones con las distancias euclidianas obtenidas por **`numpy.linalg.norm()`**, con una busqueda secquencial en todas las imagenes procesadas de la colección.
+   Para el **`knn_search()`**, se utilizó una cola de prioridad. En la que insertamos todos los elementos de la colección (ordenandolos por su distancia) y seleccionamos los K elementos con las distancias más pequeñas a la imagen de entrada. (query)
+
 ## R-tree
  Para el optimo uso del R-tree de  python se usan  **`idx.intersect`** y   **`idx.nearest`** para la busqueda por rango y el knn respectivamente idx es el indice que se maneja para su correcto uso.
  Para los vecinos más cercanos retornamos el path de la imagen y un dist que representa el vector caracteristico de la imagen.
  Para el caso de la busqeuda por rango con el Rtree su implementacion no es directa , ya que se tiene que crear un MBR para restar y sumar las 128 dimensiones 
+ 
+## KDtree
+   mmm
 
 ## Frontend
 
